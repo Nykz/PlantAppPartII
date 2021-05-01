@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div id="bg">
+    <ion-fab vertical="bottom" edge horizontal="center" slot="fixed">
+      <ion-fab-button color="white" routerLink="/auth">
+        <ion-icon name="close-outline" color="medium"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+  <ion-list lines="none" class="ion-margin">
+    <ion-list-header>WELCOME !</ion-list-header>
+    <ion-item class="ion-margin">
+      <ion-input placeholder="Enter Username" type="text" clearInput="true"></ion-input>
+    </ion-item>
+    <ion-item class="ion-margin">
+      <ion-input placeholder="Enter Password" type="password" clearInput="true"></ion-input>
+    </ion-item>
+    <ion-text color="medium"><p class="ion-margin-horizontal">Forgot Password?</p></ion-text>
+    <div align="right">
+      <ion-button shape="round" strong="true" class="ion-margin-end" color="plant">
+        SIGN IN
+        <ion-icon name="log-in" slot="end"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-list>
+</ion-content>

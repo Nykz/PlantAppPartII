@@ -1,0 +1,73 @@
+ion-header {
+    background: var(--ion-color-light);
+    ion-list {
+        background: var(--ion-color-primary);
+        border-radius: 0 0 20px 20px;
+        padding-bottom: 7vh;
+        ion-item {
+            ion-label {
+                font-weight: bold;
+                font-size: 1.2rem;
+                letter-spacing: 0.5px;
+            }
+            ion-avatar {
+                background: white;
+            }
+        }
+    }
+    .popover {
+        margin: 0 8px;
+        ion-searchbar {
+            --border-radius: 20px;
+            margin-top: -30px;
+        }
+    }
+}
+
+ion-content {
+    --background: var(--ion-color-light);
+    .title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: var(--ion-color-dark);
+    }
+    ion-slides {
+        ion-card {
+            height: 30vh;
+            width: 100%;
+            border-radius: 10px;
+            ion-card-header {
+                ion-label, p {
+                    font-weight: bold;
+                    font-size: 1rem;
+                    color: var(--ion-color-dark);
+                }
+            }
+            ion-card-content {
+                img {
+                    height: 20vh;
+                }
+            }
+        }
+        .bgCard {
+            background-image: url('../../../../assets/imgs/bg.png');
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .featured {
+            height: 40vh;
+            ion-card-header {
+                padding: 0;
+                background: var(--ion-color-tertiary);
+                img {
+                    height: 30vh;
+                }
+            }
+        }
+        .price {
+            align-self: end;
+            margin-top: 11px;
+        }
+    }
+}

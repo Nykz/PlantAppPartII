@@ -1,0 +1,31 @@
+ion-content {
+    --background: var(--ion-color-dark) url('../../../assets/imgs/leaves.jpg') no-repeat center center/cover;
+  }
+  
+  ion-list {
+    transform: translateY(15vh);
+    background: transparent;
+    img {
+        background: white;
+        height: 20vh;
+        border-radius: 50%;
+        margin-bottom: 8vh;
+    }
+    // ion-list-header {
+    //   margin-bottom: 15vh;
+    //   letter-spacing: 3px;
+    //   ion-label {
+    //     font-weight: bold;
+    //     font-size: 3rem;
+    //     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    //   }
+    // }
+    ion-button {
+      font-weight: bold;
+      text-transform: none;
+      margin: 5vh;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }

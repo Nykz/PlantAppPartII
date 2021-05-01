@@ -1,0 +1,48 @@
+ion-content {
+    ion-grid {
+        padding: 0;
+        ion-row {
+            height: 70vh;
+            ion-col {
+                padding: 0;
+                ion-slides {
+                    height: 100%;
+                    --bullet-background: var(--ion-color-medium);
+                    --bullet-background-active: var(--ion-color-primary-contrast);
+                    border-radius: 40px 0 0 40px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        background: var(--ion-color-tertiary);
+                    }
+                }
+                div {
+                    ion-button {
+                        margin-top: 5vh;
+                        ion-icon {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ion-item {
+        ion-label {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .price {
+            align-self: end;
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+ion-footer {
+    .buy {
+        background: var(--ion-color-primary);
+        border-radius: 0 10px 0 0;
+    }
+}

@@ -1,0 +1,71 @@
+<ion-header class="ion-no-border">
+  <ion-list lines="none">
+    <ion-item color="primary">
+      <ion-icon slot="start" name="reorder-two"></ion-icon>
+    </ion-item>
+    <ion-item color="primary">
+      <ion-label>Hi Technyks</ion-label>
+      <ion-avatar slot="end">
+        <img src="assets/imgs/nature love.png" />
+      </ion-avatar>
+    </ion-item>
+  </ion-list>
+  <div class="popover">
+    <ion-searchbar></ion-searchbar>
+  </div>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid class="ion-margin-top">
+    <ion-item lines="none" color="light">
+      <ion-label class="title">Popular</ion-label>
+      <ion-button slot="end" size="small" shape="round" color="primary">View all</ion-button>
+    </ion-item>
+    <ion-row>
+      <ion-slides [options]="slideOpts">
+        <ion-slide *ngFor="let item of popularItems">
+          <ion-card class="bgCard" [routerLink]="['/', 'tabs', 'items', item.id]">
+            <ion-card-header>
+              <ion-label>
+                {{item?.name}}
+                <p>₹{{item?.price}}</p>
+              </ion-label>
+            </ion-card-header>
+            <ion-card-content>
+              <img [src]="item?.img" />
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="ion-margin-top">
+    <ion-item lines="none" color="light">
+      <ion-label class="title">Featured Plants</ion-label>
+      <ion-button slot="end" size="small" shape="round" color="primary">View all</ion-button>
+    </ion-item>
+    <ion-row>
+      <ion-slides [options]="slideOpts1">
+        <ion-slide *ngFor="let item of featuredItems">
+          <ion-card class="featured" [routerLink]="['/', 'tabs', 'items', item.id]">
+            <ion-card-header>
+              <img [src]="item?.img" />              
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item lines="none">
+                <ion-label>
+                  {{item?.name}}
+                  <p><ion-text color="tertiary">{{item?.category}}</ion-text></p>
+                </ion-label>
+                <ion-text class="price" slot="end" color="primary"><b>₹{{item?.price}}</b></ion-text>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

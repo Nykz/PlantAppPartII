@@ -1,0 +1,16 @@
+<ion-tabs #tabs (ionTabsDidChange)="setCurrentTab()">
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon [name]="selectedTab == 'home' ? 'rose' : 'rose-outline'"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="wishlist">
+      <ion-icon [name]="selectedTab == 'wishlist' ? 'heart' : 'heart-outline'"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="account">
+      <ion-icon [name]="selectedTab == 'account' ? 'person' : 'person-outline'"></ion-icon>
+    </ion-tab-button>
+    
+  </ion-tab-bar>
+</ion-tabs>
