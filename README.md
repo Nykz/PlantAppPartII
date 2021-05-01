@@ -8,7 +8,7 @@ Watch the Full Episode on YouTube at https://www.youtube.com/watch?v=ZNRr8lg-kDU
 <img src="https://github.com/Nykz/PlantAppPartII/blob/main/screen03.png" width="200" height="400" />
 <img src="https://github.com/Nykz/PlantAppPartII/blob/main/screen04.png" width="200" height="400" />
 
-### Steps to Setup this beautiful Plant App screen in your system
+### Steps to Setup this beautiful Plant App in your system
 
 1.Download the zipped project
 
